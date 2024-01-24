@@ -1,0 +1,29 @@
+.casesCard{
+    padding: 32px;
+    border: 1px solid $primary-color-1;
+    border-radius: 24px;
+    position: relative;
+    &__imgWrap{
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        right: 30px;
+        top: -25px;
+    }
+    &__title{
+        margin-bottom: 6px;
+    }
+    &:hover{
+        background-color: $white-color-3;
+    }
+    &.with-white-text{
+        .p__xsmall, .smw-icon-calendar::before,
+        .casesCard__title, .p__small{
+            color: $white-color-1;
+        }
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}

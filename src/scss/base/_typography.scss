@@ -1,0 +1,164 @@
+/* Global Headings */
+h1{
+    color: $primary-color-1;
+    font-family: $primary-font-semibold; 
+    font-weight: 600;
+    font-style: normal;
+    line-height: 44px; /* 110% */
+    letter-spacing: -0.4px;
+    font-size: 40px;
+}
+
+.h1{
+    &__large{
+        /* H1 Large */
+        font-size: 44px;
+        line-height: 52px; /* 118.182% */
+        letter-spacing: -0.44px;
+    }
+}
+
+h2{
+    color: $primary-color-1;
+    font-family: $primary-font-semibold;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 118.182% */
+    letter-spacing: -0.22px;
+}
+
+/* Global Paragraphs */
+p{
+    color: $primary-color-3;
+
+    /* Paragraph Text */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.016px;
+}
+
+.p{
+    &__small{
+        /* Paragraph Text Small */
+        font-size: 14px;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: -0.014px;
+    }
+    &__xsmall{
+        /* Paragraph Text Extra Small */
+        color: $primary-color-1;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        letter-spacing: 1.068px;
+        text-transform: uppercase;
+    }
+}
+
+/* Button Text and Navitaion */
+.smw-btn-text{
+    color: $primary-color-1;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.014px;
+    font-family: $primary-font-bold; 
+}
+
+/* Navigation */
+.smw-link{
+    color: $white-color-1;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.014px;
+    text-decoration: none;
+    cursor: pointer; 
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.link{
+    &__insight{
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        .smw-btn-text{
+            color: $secondary-color-1;
+        }
+        .smw-icon-right-arrow{
+            &::before{
+                color: $secondary-color-1;
+                font-size: 14px;
+            }
+        }
+        &:hover{
+            gap: 16px;
+            .smw-btn-text{
+                text-decoration: underline;
+            }
+            .smw-icon-right-arrow{
+                text-decoration: none;
+            }
+        }
+    }
+    &__people{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: $secondary-color-1;
+        font-family: $primary-font-bold;
+        [class^="smw-icon-"]{
+            &::before{
+                color: $secondary-color-1;
+            }
+        }
+        &-text{
+            text-decoration: none;
+            &:hover{
+                color: $primary-color-1;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.insight{
+    &__link{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            h2{
+                text-decoration: underline; 
+            }
+            .link__insight{
+                text-decoration: none;
+                gap: 16px;
+            }
+        }
+    }
+}
+
+.job-title{
+    &__link{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Text color classes */
+.smw-primary-text{
+    color: $primary-color-1;
+}

@@ -1,0 +1,164 @@
+/* Fonts */
+$primary-font-regular: 'raleway';
+@font-face {
+    font-family: $primary-font-regular;
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary-font-semibold: 'raleway-semibold';
+@font-face {
+    font-family: $primary-font-semibold;
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary-font-bold: 'raleway-bold';
+@font-face {
+    font-family: $primary-font-bold;
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/*  All Icons
+    Note: dist/icons.html file have all icons and it's classes
+*/
+$smw-font-icons: 'smwicons';
+@font-face {
+  font-family: $smw-font-icons;
+  src:  url('../fonts/smwicons.eot?ezvag1');
+  src:  url('../fonts/smwicons.eot?ezvag1#iefix') format('embedded-opentype'),
+    url('../fonts/smwicons.ttf?ezvag1') format('truetype'),
+    url('../fonts/smwicons.woff?ezvag1') format('woff'),
+    url('../fonts/smwicons.svg?ezvag1#smwicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="smw-icon-"], [class*=" smw-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $smw-font-icons !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 16px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.smw-icon-arrow-right-circle:before {
+  content: "\e900";
+  color: $primary-color-1;
+}
+.smw-icon-arrow-up:before {
+  content: "\e901";
+  color: $primary-color-1;
+}
+.smw-icon-button-left:before {
+  content: "\e902";
+  color: $white-color-1;
+}
+.smw-icon-button-right:before {
+  content: "\e903";
+  color: $white-color-1;
+}
+.smw-icon-calendar:before {
+  content: "\e904";
+  color: $primary-color-1;
+}
+.smw-icon-close:before {
+  content: "\e905";
+  color: $primary-color-1;
+}
+.smw-icon-close-blue:before {
+  content: "\e906";
+  color: $secondary-color-1;
+}
+.smw-icon-close-blue-hover:before {
+  content: "\e907";
+  color: $secondary-color-3;
+}
+.smw-icon-default:before {
+  content: "\e908";
+  color: $white-color-1;
+}
+.smw-icon-default-variant-2:before {
+  content: "\e909";
+  color: $white-color-1;
+}
+.smw-icon-default-variant-3:before {
+  content: "\e90a";
+  color: $white-color-1;
+}
+.smw-icon-down-angle:before {
+  content: "\e90b";
+  color: $primary-color-1;
+}
+.smw-icon-down-arrow:before {
+  content: "\e90c";
+  color: $primary-color-1;
+}
+.smw-icon-email:before {
+  content: "\e90d";
+  color: $primary-color-1;
+}
+.smw-icon-info-circle:before {
+  content: "\e90e";
+  color: $primary-color-1;
+}
+.smw-icon-linkedln:before {
+  content: "\e90f";
+  color: $white-color-1;
+}
+.smw-icon-linkedln-blue:before {
+  content: "\e910";
+  color: $secondary-color-1;
+}
+.smw-icon-linkedln-blue-hover:before {
+  content: "\e911";
+  color: $secondary-color-3;
+}
+.smw-icon-linkedln-hover:before {
+  content: "\e912";
+  color: $white-color-1;
+}
+.smw-icon-phone:before {
+  content: "\e913";
+  color: $primary-color-1;
+}
+.smw-icon-right-angle:before {
+  content: "\e914";
+  color: $primary-color-1;
+}
+.smw-icon-right-arrow:before {
+  content: "\e915";
+  color: $primary-color-1;
+}
+.smw-icon-search:before {
+  content: "\e916";
+  color: $primary-color-1;
+}
+.smw-icon-translate:before {
+  content: "\e917";
+  color: $white-color-1;
+}
+.smw-icon-twitter:before {
+  content: "\e918";
+  color: $white-color-1;
+}
+.smw-icon-twitter-hover:before {
+  content: "\e919";
+  color: $white-color-1;
+}
